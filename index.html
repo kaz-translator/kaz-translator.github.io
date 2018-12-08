@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Переводчик с кириллицы на латиницу</title>
+</head>
+<body class="all">
+	<img src="logo.png" id="school">
+	<textarea id="txt1" class="txt1"></textarea><p class="v1">Вывод</p>
+	<textarea id="txt2" class="txt2"></textarea><p class="v2">Ввод</p>
+	<button onclick="ok()" id="ok">Перевести с кириллицы</button>
+	<button onclick="okt()" id="okt">Перевести с латиницы</button>
+	<p class="name" style="position: absolute; bottom: -1%; left: 3%; font-size: 85%">Краснобаев Никита©</p>
+	<p class="site" id="prog" style="position: absolute; bottom: -1%; right: 3%; font-size: 85%;">Перевод с кириллицы на латиницу®</p>
+
+
+	<script type="text/javascript">
+		
+	const x = document.getElementById('txt1');
+	const y = document.getElementById('txt2');
+	const btn = document.querySelector('button#ok');
+	const btn1 = document.querySelector('button#okt');
+
+	btn.onclick = () => {
+  	y.value = x.value.replace(/А/g, 'A').replace(/а/g, 'a').replace(/Ә/g, 'Á').replace(/ә/g, 'á').replace(/Б/g, 'B').replace(/б/g, 'b').replace(/В/g, 'V').replace(/в/g, 'v').replace(/Г/g, 'G').replace(/г/g, 'g').replace(/Ғ/g, 'Ǵ').replace(/ғ/g, 'ǵ').replace(/Д/g, 'D').replace(/д/g, 'd').replace(/Е/g, 'E').replace(/е/g, 'e').replace(/Ж/g, 'J').replace(/ж/g, 'j').replace(/З/g, 'Z').replace(/з/g, 'z').replace(/И/g, 'I').replace(/и/g, 'ı').replace(/Й/g, 'I').replace(/й/g, 'ı').replace(/К/g, 'K').replace(/к/g, 'k').replace(/Қ/g, 'Q').replace(/қ/g, 'q').replace(/Л/g, 'L').replace(/л/g, 'l').replace(/М/g, 'M').replace(/м/g, 'm').replace(/Н/g, 'N').replace(/н/g, 'n').replace(/Ң/g, 'Ń').replace(/ң/g, 'ń').replace(/О/g, 'O').replace(/о/g, 'o').replace(/Ө/g, 'Ó').replace(/ө/g, 'ó').replace(/П/g, 'P').replace(/п/g, 'p').replace(/Р/g, 'R').replace(/р/g, 'r').replace(/С/g, 'S').replace(/с/g, 's').replace(/Т/g, 'T').replace(/т/g, 't').replace(/У/g, 'Ý').replace(/у/g, 'ý').replace(/Ұ/g, 'U').replace(/ұ/g, 'u').replace(/Ү/g, 'Ú').replace(/ү/g, 'ú').replace(/Ф/g, 'F').replace(/ф/g, 'f').replace(/Х/g, 'H').replace(/х/g, 'h').replace(/Һ/g, 'Һ').replace(/һ/g, 'h').replace(/Ц/g, 'Ts').replace(/ц/g, 'ts').replace(/Ч/g, 'Ch').replace(/ч/g, 'ch').replace(/Ш/g, 'Sh').replace(/ш/g, 'sh').replace(/Ы/g, 'Y').replace(/ы/g, 'y').replace(/І/g, 'I').replace(/і/g, 'i').replace(/Э/g, 'E').replace(/э/g, 'e').replace(/Ю/g, 'Iý').replace(/ю/g, 'iý').replace(/Я/g, 'Ia').replace(/я/g, 'ia').replace(/Щ/g, '').replace(/Ь/g, '').replace(/Ъ/g, '').replace(/щ/g, '').replace(/ь/g, '').replace(/ъ/g, '').replace(/ё/g, '').replace(/Ё/g, '');
+}
+
+		btn1.onclick = () => {
+  	y.value = x.value.replace(/А/g, 'A').replace(/а/g, 'a').replace(/Á/g, 'Ә').replace(/á/g, 'ә').replace(/BБ/g, 'Б').replace(/b/g, 'б').replace(/V/g, 'В').replace(/v/g, 'в').replace(/G/g, 'Г').replace(/g/g, 'г').replace(/Ǵ/g, 'Ғ').replace(/ǵ/g, 'ғ').replace(/D/g, 'Д').replace(/d/g, 'д').replace(/Е/g, 'E').replace(/е/g, 'e').replace(/J/g, 'Ж').replace(/j/g, 'ж').replace(/Z/g, 'З').replace(/z/g, 'з').replace(/I/g, 'И').replace(/ı/g, 'и').replace(/I/g, 'Й').replace(/ı/g, 'й').replace(/К/g, 'K').replace(/k/g, 'к').replace(/Q/g, 'Қ').replace(/q/g, 'қ').replace(/L/g, 'Л').replace(/l/g, 'л').replace(/М/g, 'M').replace(/m/g, 'м').replace(/N/g, 'Н').replace(/n/g, 'н').replace(/Ń/g, 'Ң').replace(/ń/g, 'ң').replace(/О/g, 'O').replace(/о/g, 'o').replace(/Ó/g, 'Ө').replace(/ó/g, 'ө').replace(/P/g, 'П').replace(/p/g, 'п').replace(/R/g, 'Р').replace(/r/g, 'р').replace(/S/g, 'С').replace(/s/g, 'с').replace(/Т/g, 'T').replace(/t/g, 'т').replace(/Ý/g, 'У').replace(/ý/g, 'у').replace(/U/g, 'Ұ').replace(/u/g, 'ұ').replace(/Ú/g, 'Ү').replace(/ú/g, 'ү').replace(/F/g, 'Ф').replace(/f/g, 'ф').replace(/H/g, 'Х').replace(/h/g, 'х').replace(/Һ/g, 'Һ').replace(/h/g, 'һ').replace(/Ts/g, 'Ц').replace(/ts/g, 'ц').replace(/Ch/g, 'Ч').replace(/ch/g, 'ч').replace(/Sh/g, 'Ш').replace(/sh/g, 'ш').replace(/Y/g, 'Ы').replace(/y/g, 'ы').replace(/І/g, 'I').replace(/і/g, 'i').replace(/E/g, 'Э').replace(/e/g, 'э').replace(/Iý/g, 'Ю').replace(/iý/g, 'ю').replace(/Ia/g, 'Я').replace(/ia/g, 'я');
+}
+
+	</script>
+
+			<style type="text/css">
+				
+					@font-face {
+   	font-family: Kurale;
+    src: url(fonts/Kurale.ttf);
+}
+
+.txt1 {
+	position: absolute;
+	bottom: 20%;
+	left: 5%;
+	width: 40%;
+	height: 45%;
+	resize: none;
+	font-family: kurale;
+	font-weight: bold;
+	font-size: 110%;
+	border-radius: 10px;
+}
+
+.txt2 {
+	position: absolute;
+	bottom: 20%;
+	right: 5%;
+	width: 40%;
+	height: 45%;
+	resize: none;
+	font-family: kurale;
+	font-weight: bold;
+	font-size: 110%;
+	border-radius: 10px;
+}
+
+.v1 {
+	position: absolute;
+	top: 22%;
+	right: 20%;
+	font-size: 110%;
+}
+
+.v2 {
+	position: absolute;
+	top: 22%;
+	left: 20%;
+	font-size: 110%;
+}
+
+body {
+	font-family: kurale;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+#ok {
+	position: absolute;
+	bottom: 7%;
+	width: 24.5%;
+	height: 5.5%;
+	font-family: kurale;
+	font-size: 110%;
+	font-weight: bold;
+	border-radius: 20px;
+	left: 20.5%;
+}
+
+#okt {
+	position: absolute;
+	bottom: 7%;
+	width: 24.5%;
+	height: 5.5%;
+	font-family: kurale;
+	font-size: 110%;
+	font-weight: bold;
+	border-radius: 20px;
+	right: 20.5%;
+}
+
+#school {
+	width: 11%;
+	height: 21%;
+	position: absolute;
+	top: 3%;
+	right: 44.5%;
+}
+
+
+
+
+
+			</style>
+
+</body>
+</html>
